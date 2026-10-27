@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* Simple neutral baseline (mobile-first) */
+html,
+body {
+  height: 100%;
+}
+
+/* Light/dark gradient background + base text colors */
+body {
+  @apply bg-linear-to-b from-zinc-50 via-slate-50 to-zinc-100 text-zinc-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-zinc-100;
+}
+
+/* Reusable layout container */
+.rf-container {
+  @apply mx-auto w-full max-w-6xl px-4;
+}
